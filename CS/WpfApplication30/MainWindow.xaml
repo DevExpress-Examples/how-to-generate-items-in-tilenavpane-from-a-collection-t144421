@@ -1,0 +1,30 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxnav="http://schemas.devexpress.com/winfx/2008/xaml/navigation" x:Class="WpfApplication30.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <dxnav:TileNavPane VerticalAlignment="Top" CategoriesSource="{Binding Categories}">
+            <dxnav:TileNavPane.CategoryTemplate>
+                <DataTemplate>
+                    <dxnav:TileNavCategory Content="{Binding CategoryName}" ItemsSource="{Binding Items}">
+                        <dxnav:TileNavCategory.ItemTemplate>
+                            <DataTemplate>
+                                <dxnav:TileNavItem Content="{Binding ItemName}" ItemsSource="{Binding SubItems}">
+                                    <dxnav:TileNavItem.ItemTemplate>
+                                        <DataTemplate>
+                                            <dxnav:TileNavSubItem Content="{Binding SubItemName}"/>
+                                        </DataTemplate>
+                                    </dxnav:TileNavItem.ItemTemplate>
+                                </dxnav:TileNavItem>
+                            </DataTemplate>
+                        </dxnav:TileNavCategory.ItemTemplate>
+                    </dxnav:TileNavCategory>
+                </DataTemplate>
+            </dxnav:TileNavPane.CategoryTemplate>
+            <dxnav:TileNavPane.NavButtons>
+                <dxnav:NavButton Content="NavButton" IsMain="True"/>
+            </dxnav:TileNavPane.NavButtons>
+        </dxnav:TileNavPane>
+    </Grid>
+</Window>
