@@ -1,7 +1,7 @@
 <!-- default file list -->
 *Files to look at*:
 
-* **[MainWindow.xaml](./CS/WpfApplication30/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/WpfApplication30/MainWindow.xaml.vb))**
+* **[MainWindow.xaml](./CS/WpfApplication30/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfApplication30/MainWindow.xaml))**
 * [MainWindow.xaml.cs](./CS/WpfApplication30/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/WpfApplication30/MainWindow.xaml.vb))
 <!-- default file list end -->
 # How to: Generate Items in TileNavPane from a Collection
